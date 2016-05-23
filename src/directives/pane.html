@@ -1,10 +1,10 @@
-<div class="ng-accordion_item" ng-class="{active:selected}">
-  <div class="ng-accordion_heading">
-    <a class="ng-accordion_toggle" ng-click="selectPane()">
+<div class="panel panel-default">
+  <div class="panel-heading hidden visible-xs-block">
+    <a class="panel-title" ng-click="selectPane()">
       {{title}}
     </a>
   </div>
-  <div class="ng-accordion_content" id="{{paneId}}">
+  <div class="panel-body" id="{{paneId}}" ng-class="{show:selected, hidden: !selected}">
     <div ng-transclude ></div>
   </div>
 </div>

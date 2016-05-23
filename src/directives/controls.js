@@ -12,7 +12,6 @@ module.exports = function () {
       var vm = this;
       vm.panes = [];
       vm.currentPane = getCurrentPane;
-      vm.type = $attrs.type;
 
       function getCurrentPane() {
         return _(vm.panes).findWhere({ selected: true });
