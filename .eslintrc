@@ -1,0 +1,19 @@
+{
+  "extends": "airbnb-base/legacy",
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "jquery": true
+  },
+  "rules": {
+    "no-console": 0,
+    "func-names": 0,
+    "vars-on-top": 0,
+    "no-param-reassign": 0,
+    "global-require": 0,
+    "no-use-before-define": ["error", { "functions": false }]
+  },
+  "globals": {
+    "angular" :true
+  }
+}

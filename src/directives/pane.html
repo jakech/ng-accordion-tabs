@@ -1,0 +1,10 @@
+<div class="ng-accordion_item" ng-class="{active:selected}">
+  <div class="ng-accordion_heading">
+    <a class="ng-accordion_toggle" ng-click="selectPane()">
+      {{title}}
+    </a>
+  </div>
+  <div class="ng-accordion_content" id="{{paneId}}">
+    <div ng-transclude ></div>
+  </div>
+</div>

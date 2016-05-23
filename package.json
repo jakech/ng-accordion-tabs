@@ -1,0 +1,22 @@
+{
+  "name": "ng-accordion-tabs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jake Choi",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^2.10.2",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-plugin-import": "^1.8.0",
+    "file-loader": "^0.8.5",
+    "gulp": "^3.9.1",
+    "gulp-browserify": "^0.5.1",
+    "gulp-webpack": "^1.5.0",
+    "html-loader": "^0.4.3",
+    "underscore": "^1.8.3"
+  }
+}

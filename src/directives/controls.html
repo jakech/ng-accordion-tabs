@@ -1,0 +1,11 @@
+<div class="ng-accordion-tabs ng-accordion-tabs--{{tabs.type}}">
+  <ul>
+    <li ng-repeat="pane in tabs.panes" ng-class="{active:pane.selected}">
+      <a ng-click="pane.selectPane()">{{pane.title}}</a>
+    </li>
+  </ul>
+  <div class="ng-accordion">
+    <h3 ng-if="tabs.type=='long'">{{ tabs.currentPane().title }}</h3>
+    <div ng-transclude></div>
+  </div>
+</div>
