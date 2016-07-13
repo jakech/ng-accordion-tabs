@@ -1,11 +1,8 @@
 <div>
-  <ul class="nav nav-tabs hidden-xs">
+  <ul class="ngat-ctrl hidden-xs">
     <li ng-repeat="pane in tabs.panes" ng-class="{active:pane.selected}">
-      <a ng-click="pane.selectPane()">{{pane.title}}</a>
+      <a ng-click="pane.selectPane()" ng-href="#{{pane.paneId}}">{{pane.title}}</a>
     </li>
   </ul>
-  <div class="panel-group">
-    <h3 ng-if="tabs.type=='long'">{{ tabs.currentPane().title }}</h3>
-    <div ng-transclude></div>
-  </div>
+  <div class="panel-group" ng-transclude></div>
 </div>
